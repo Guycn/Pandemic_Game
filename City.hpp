@@ -1,0 +1,85 @@
+#pragma once
+#include <map>
+using namespace std;
+
+namespace pandemic{
+    enum class City{
+        Algiers,
+        Atlanta,
+        Baghdad,
+        Bangkok,
+        Beijing,
+        Bogota,
+        BuenosAires,
+        Cairo,
+        Chennai,
+        Chicago,
+        Delhi,
+        Essen,
+        HoChiMinhCity,
+        HongKong,
+        Istanbul,
+        Jakarta,
+        Johannesburg,
+        Karachi,
+        Khartoum,
+        Kinshasa,
+        Kolkata,
+        Lagos,
+        Lima,
+        London,
+        LosAngeles,
+        Madrid,
+        Manila,
+        MexicoCity,
+        Miami,
+        Milan,
+        Montreal,
+        Moscow,
+        Mumbai,
+        NewYork,
+        Osaka,
+        Paris,
+        Riyadh,
+        SanFrancisco,
+        Santiago,
+        SaoPaulo,
+        Seoul,
+        Shanghai,
+        StPetersburg,
+        Sydney,
+        Taipei,
+        Tehran,
+        Tokyo,
+        Washington
+    };
+    const map<string, City> city_name{
+        {"Algiers", City::Algiers}, {"Atlanta", City::Atlanta}, {"Baghdad", City::Baghdad}, {"Bangkok", City::Bangkok},
+        {"Beijing", City::Beijing}, {"Bogota", City::Bogota}, {"BuenosAires", City::BuenosAires}, {"Cairo", City::Cairo},
+        {"Chennai", City::Chennai}, {"Chicago", City::Chicago}, {"Delhi", City::Delhi}, {"Essen", City::Essen},
+        {"HoChiMinhCity", City::HoChiMinhCity}, {"HongKong", City::HongKong}, {"Istanbul", City::Istanbul}, {"Jakarta", City::Jakarta},
+        {"Johannesburg", City::Johannesburg}, {"Karachi", City::Karachi}, {"Khartoum", City::Khartoum}, {"Kinshasa", City::Kinshasa},
+        {"Kolkata", City::Kolkata}, {"Lagos", City::Lagos}, {"Lima", City::Lima}, {"London", City::London},
+        {"LosAngeles", City::LosAngeles}, {"Madrid", City::Madrid}, {"Manila", City::Manila}, {"MexicoCity", City::MexicoCity},
+        {"Miami", City::Miami}, {"Milan", City::Milan}, {"Montreal", City::Montreal}, {"Moscow", City::Moscow},
+        {"Mumbai", City::Mumbai}, {"NewYork", City::NewYork}, {"Osaka", City::Osaka}, {"Paris", City::Paris},
+        {"Riyadh", City::Riyadh}, {"SanFrancisco", City::SanFrancisco}, {"Santiago", City::Santiago}, {"SaoPaulo", City::SaoPaulo},
+        {"Seoul", City::Seoul}, {"Shanghai", City::Shanghai}, {"StPetersburg", City::StPetersburg}, {"Sydney", City::Sydney},
+        {"Taipei", City::Taipei}, {"Tehran", City::Tehran}, {"Tokyo", City::Tokyo}, {"Washington", City::Washington}
+
+    };
+    const map<City,string> city_to_string{
+        {City::Algiers, "Algiers"}, {City::Atlanta, "Atlanta"}, {City::Baghdad, "Baghdad"}, {City::Bangkok, "Bangkok"},
+        {City::Beijing ,"Beijing"}, {City::Bogota, "Bogota"}, {City::BuenosAires, "BuenosAires"}, {City::Cairo, "Cairo"},
+        {City::Chennai ,"Chennai"}, {City::Chicago ,"Chicago"}, {City::Delhi, "Delhi"}, {City::Essen, "Essen"},
+        {City::HoChiMinhCity ,"HoChiMinhCity"}, {City::HongKong ,"HongKong"}, {City::Istanbul ,"Istanbul"}, {City::Jakarta, "Jakarta"},
+        {City::Johannesburg ,"Johannesburg"}, {City::Karachi, "Karachi"}, {City::Khartoum, "Khartoum"}, {City::Kinshasa ,"Kinshasa"},
+        {City::Kolkata, "Kolkata"}, {City::Lagos, "Lagos"}, {City::Lima, "Lima"}, {City::London ,"London"},
+        {City::LosAngeles, "LosAngeles"}, {City::Madrid ,"Madrid"}, {City::Manila ,"Manila"}, {City::MexicoCity, "MexicoCity"},
+        {City::Miami, "Miami"}, {City::Milan, "Milan"}, {City::Montreal, "Montreal"}, {City::Moscow, "Moscow"},
+        {City::Mumbai, "Mumbai"}, {City::NewYork, "NewYork"}, {City::Osaka, "Osaka"}, {City::Paris, "Paris"},
+        {City::Riyadh, "Riyadh"}, {City::SanFrancisco, "SanFrancisco"}, {City::Santiago, "Santiago"}, {City::SaoPaulo, "SaoPaulo"},
+        {City::Seoul, "Seoul"}, {City::Shanghai, "Shanghai"}, {City::StPetersburg, "StPetersburg"}, {City::Sydney, "Sydney"},
+        {City::Taipei, "Taipei"}, {City::Tehran, "Tehran"}, {City::Tokyo, "Tokyo"}, {City::Washington, "Washington"}
+    };
+};
