@@ -15,13 +15,14 @@ namespace pandemic{
             set<City> player_cards;
             Board *board;
             set<City>temp;
-            uint num;
-            uint Res;
-            uint Field_Doctor;
-            uint dispatcher;
-            uint genesplicer;
-            uint operationsexpert;
-            uint virologist;
+            int num;
+            int Res;
+            int Field_Doctor;
+            int dispatcher;
+            int genesplicer;
+            int operationsexpert;
+            int virologist;
+            int medic;
         
         
         
@@ -37,6 +38,7 @@ namespace pandemic{
             virtual Player& treat(City c);
             virtual string role()const=0;
             virtual Player& take_card(City c);
+            void remove_cards();
 
 
 

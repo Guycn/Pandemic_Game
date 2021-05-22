@@ -13,6 +13,5 @@ namespace pandemic{
         string role()const{
             return "Medic";
         }
-        Player& treat(City c);
     };
 };

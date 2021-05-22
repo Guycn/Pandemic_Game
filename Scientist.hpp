@@ -8,7 +8,7 @@ using namespace std;
 namespace pandemic{
     class Scientist : public Player{
         public:
-            Scientist(Board& board, City city, uint num_4 = 4); 
+            Scientist(Board& board, City city, int num_4 = 4); 
             string role()const{
             return "Scientist";
             }
