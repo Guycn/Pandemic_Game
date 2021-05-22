@@ -29,7 +29,7 @@ Board::Board(){
 }
 
 
-unsigned int& Board::operator[](City c){
+int& Board::operator[](City c){
     return disease_level[c];
 }
 
@@ -37,7 +37,7 @@ ostream& pandemic::operator<<(ostream& out, const Board& board){
     out <<"Disease level board\n" << endl;
     for(const auto& var : city_name){
         string city = var.first;
-        unsigned int level = board.disease_level.find(var.second)->second;
+        int level = board.disease_level.find(var.second)->second;
         out << city <<"\t" << level <<"\n" << endl;
     }
     return out;
@@ -76,5 +76,12 @@ void Board::insert_cure(Color color){
     color_cure.insert(color);
 }
 
+void Board::remove_cures(){
+    color_cure.clear();
+}
+
+void Board::remove_stations(){
+    existing_research_station.clear();
+}
 
 
