@@ -11,7 +11,7 @@ namespace pandemic{
     class Board{
         public:
             Board();
-            unsigned int& operator[](City c);
+            int& operator[](City c);
             friend ostream& operator<<(ostream& o, const Board& board);
             bool is_clean() const;   //const from right mean --> this is a const
             bool research_station(City c) const;
@@ -20,11 +20,13 @@ namespace pandemic{
             Color get_city_color(City c) const;
             bool cure_exist(Color color) const;
             void insert_cure(Color color);
+            void remove_cures();
+            void remove_stations();
 
         
         map<City, set<City>> city_connections;
         set<City> existing_research_station;
-        map<City,unsigned int> disease_level;
+        map<City,int> disease_level;
         set<Color> color_cure;
         map<City,Color> cities_color;
         map<string, Color> _Color;
